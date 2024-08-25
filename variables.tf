@@ -5,14 +5,12 @@ variable "GOOGLE_REGION" {
 }
 
 variable "GKE_NUM_NODES" {
-  type        = string
+  type        = number
   description = "Initial number of GKE cluster nodes"
-
 }
 
 variable "GKE_MACHINE_TYPE" {
   type        = string
 #  default     = "e2-micro"
   description = "GKE VM types"
-
 }
