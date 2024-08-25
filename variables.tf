@@ -4,6 +4,12 @@ variable "GOOGLE_REGION" {
   description = "GCP region name"
 }
 
+variable "GKE_NAME" {
+  type        = string
+  default     = "test-1"
+  description = "GKE cluster name"
+}
+
 variable "GKE_NUM_NODES" {
   type        = number
   description = "Initial number of GKE cluster nodes"
