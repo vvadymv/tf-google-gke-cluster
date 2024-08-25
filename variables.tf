@@ -1,4 +1,4 @@
-variable "REGION" {
+variable "GOOGLE_REGION" {
   type        = string
 #  default     = "us-central1-a"
   description = "GCP region name"
