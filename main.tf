@@ -1,5 +1,5 @@
 resource "google_container_cluster" "this" {
-  name = "this"
+  name = "test1"
   location = var.GOOGLE_REGION
 
   remove_default_node_pool = true
