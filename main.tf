@@ -5,6 +5,9 @@ resource "google_container_cluster" "this" {
   remove_default_node_pool = true
   initial_node_count       = 1
   deletion_protection = false
+  workload_identity_config {
+    workload_pool = "${var.GOOGLE_PROJECT}.svc.id.goog"
+  }
 }
 
 resource "google_container_node_pool" "main" {
