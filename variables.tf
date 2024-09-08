@@ -1,3 +1,8 @@
+variable "GOOGLE_PROJECT" {
+  type        = string
+  description = "Google project"
+}
+
 variable "GOOGLE_REGION" {
   type        = string
 #  default     = "us-central1-a"
